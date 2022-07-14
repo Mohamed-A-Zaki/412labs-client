@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Home = () => {
   return (
@@ -27,34 +28,27 @@ const Home = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/alumni"
-                  // onClick={() => {
-                  //   window.open("http://accvrdiploma.com/alumni/");
-                  // }}
-                >
-                  Alumni
-                </Link>
+                <Link to="/alumni">Alumni</Link>
               </li>
               <li>
-                <a data-nav-section="about" href="#about">
+                <HashLink data-nav-section="about" to="#about">
                   About
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a data-nav-section="faq" href="#faq">
+                <HashLink data-nav-section="faq" to="#faq">
                   FAQ
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a data-nav-section="apply" href="#apply">
+                <HashLink data-nav-section="apply" to="#apply">
                   Apply
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a data-nav-section="contact" href="#contact">
+                <HashLink data-nav-section="contact" to="#contact">
                   Contact
-                </a>
+                </HashLink>
               </li>
             </ul>
           </div>

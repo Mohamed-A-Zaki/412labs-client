@@ -88,11 +88,7 @@ const Details = () => {
               title={id}
               width="100%"
               height="600"
-              src={
-                video !== ""
-                  ? video
-                  : "https://www.youtube.com/embed/OfK8eLDTGTk"
-              }
+              src={video}
               frameBorder="0"
               allow="autoplay; encrypted-media;"
               allowFullScreen

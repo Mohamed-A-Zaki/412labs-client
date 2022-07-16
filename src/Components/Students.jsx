@@ -11,7 +11,9 @@ const Students = () => {
   const [all_students, setAll_students] = useState(students);
   const [cycle_students, setCycle_students] = useState([]);
   const [cycle_number, setCycle_number] = useState(1);
-  const [cycle_count, setCycle_count] = useState(all_students.at(-1).cycle);
+  const [cycle_count, setCycle_count] = useState(
+    students.sort((a, b) => a.cycle - b.cycle).at(-1).cycle
+  );
   const [arr_for_map, setArr_for_map] = useState([]);
 
   arr_for_map.length = cycle_count;

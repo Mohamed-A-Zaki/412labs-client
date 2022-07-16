@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       {/* provide data after sort it by cycle number */}
-      <Data.Provider value={students.sort((a, b) => a.cycle - b.cycle)}>
+      <Data.Provider value={students}>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/alumni" element={<Alumni />}></Route>
